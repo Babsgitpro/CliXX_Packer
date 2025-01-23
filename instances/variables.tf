@@ -18,21 +18,21 @@ variable "region"{
 }
 
 variable "vpc_id"{
-    default="vpc-0befa9f9ff5d3b888"
+    default="vpc-0180c94044af40a67"
 }
 
 variable "subnets" {
   type = list(string)
   default=[
-    "subnet-0a029f0722b30551b",
-    "subnet-0f809518c9e33b8d3",
+    "subnet-07d287655921f3187", #us-east-1a
+    "subnet-0f1f23c65386827ac", #us-east-1b
    ]
 }
 
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "ses_key.pub"
+  default = "packer_rsa.pub"
 }
 
 variable "ami_name" {
-  default = "ami-stack-51"
+  default = "ami-stack-01"
 }
